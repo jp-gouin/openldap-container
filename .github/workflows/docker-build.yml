@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           platforms: linux/amd64,linux/arm64
-          context: 2.6/debian-12/.
+          context: ./2.6/debian-12/
           push: true
           tags: jpgouin/openldap:${{  github.ref_name }}
